@@ -10,10 +10,28 @@ import UIKit
 
 class addViewController: UIViewController {
 
+    @IBOutlet weak var createButton: UIButton!
+    @IBOutlet weak var locationField: UITextField!
+    @IBOutlet weak var ownerField: UITextField!
+    @IBOutlet weak var nameField: UITextField!
+    @IBOutlet weak var questionsSwitch: UISwitch!
+    @IBOutlet weak var queueSwitch: UISwitch!
+    
+    @IBAction func createPressed(_ sender: UIButton) {
+        if (nameField.text! != "" && ownerField.text! != "" && locationField.text! != ""){
+        let session1 = Session(name: nameField.text!, owner: ownerField.text!, location: locationField.text!, questionsOn: questionsSwitch.isOn, queueOn: queueSwitch.isOn)
+        
+        db().addSessionDB(session: session1)
+    }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor(red: 0.91, green: 0.91, blue: 0.91, alpha: 1)
-        
+        questionsSwitch.onTintColor = UIColor(red: 0.22, green: 0.24, blue: 0.28, alpha: 0.91)
+        questionsSwitch.thumbTintColor = UIColor(red: 0.59, green: 0.59, blue: 0.59, alpha: 1)
+        questionsSwitch.tintColor = UIColor(red: 0.59, green: 0.59, blue: 0.59, alpha: 1)
+        queueSwitch.onTintColor = UIColor(red: 0.22, green: 0.24, blue: 0.28, alpha: 0.91)
+        createButton.backgroundColor = UIColor(red: 0.22, green: 0.24, blue: 0.28, alpha: 1)
         // Do any additional setup after loading the view.
     }
 

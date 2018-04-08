@@ -13,6 +13,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     var names = ["Daniel", "Min", "Jeffrey"]
     var sessions = ["CIS 160 OFFICE HOURS", "CIS 120 OFFICE HOURS", "CIS 110 OFFICE HOURS"]
+    var DB = db()
 
     @IBOutlet weak var addButton: UIButton!
     @IBOutlet weak var sessionsTable: UITableView!
@@ -23,6 +24,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
         FirebaseApp.configure()
+        DB.getDBReference()
         view.backgroundColor = UIColor(red: 0.91, green: 0.91, blue: 0.91, alpha: 1)
         addButton.backgroundColor = UIColor(red: 0.22, green: 0.24, blue: 0.28, alpha: 1)
         sessionsTable.backgroundColor = UIColor(red: 0.91, green: 0.91, blue: 0.91, alpha: 1)

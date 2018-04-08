@@ -12,4 +12,7 @@ struct Session {
     var name : String = ""
     var owner : String = ""
     var location : String = ""
+    var questionsOn : Bool = true
+    var queueOn: Bool = true
 }
+

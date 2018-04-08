@@ -17,6 +17,7 @@
 		EF3068292079AD4B007B4F4B /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3068282079AD4B007B4F4B /* Session.swift */; };
 		EF30682D2079B08E007B4F4B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF30682C2079AE69007B4F4B /* GoogleService-Info.plist */; };
 		EF30682F2079B399007B4F4B /* addViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF30682E2079B399007B4F4B /* addViewController.swift */; };
+		EF3068332079C00E007B4F4B /* db.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3068322079C00E007B4F4B /* db.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		EF3068282079AD4B007B4F4B /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		EF30682C2079AE69007B4F4B /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EF30682E2079B399007B4F4B /* addViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addViewController.swift; sourceTree = "<group>"; };
+		EF3068322079C00E007B4F4B /* db.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = db.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 		EF306813207998F1007B4F4B /* AskAway */ = {
 			isa = PBXGroup;
 			children = (
+				EF3068322079C00E007B4F4B /* db.swift */,
 				EF306814207998F1007B4F4B /* AppDelegate.swift */,
 				EF306816207998F1007B4F4B /* ViewController.swift */,
 				EF3068282079AD4B007B4F4B /* Session.swift */,
@@ -198,11 +201,13 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-AskAway/Pods-AskAway-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -233,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF3068292079AD4B007B4F4B /* Session.swift in Sources */,
+				EF3068332079C00E007B4F4B /* db.swift in Sources */,
 				EF3068272079A23B007B4F4B /* sessionCustomCell.swift in Sources */,
 				EF306817207998F1007B4F4B /* ViewController.swift in Sources */,
 				EF30682F2079B399007B4F4B /* addViewController.swift in Sources */,
