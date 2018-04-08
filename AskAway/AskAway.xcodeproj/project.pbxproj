@@ -7,14 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E612E2AD8C8CDE299DA03F4C /* Pods_AskAway.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D0A9F18CBCC43E498DF2759 /* Pods_AskAway.framework */; };
 		EF306815207998F1007B4F4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF306814207998F1007B4F4B /* AppDelegate.swift */; };
 		EF306817207998F1007B4F4B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF306816207998F1007B4F4B /* ViewController.swift */; };
 		EF30681A207998F1007B4F4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF306818207998F1007B4F4B /* Main.storyboard */; };
 		EF30681C207998F1007B4F4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF30681B207998F1007B4F4B /* Assets.xcassets */; };
 		EF30681F207998F1007B4F4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF30681D207998F1007B4F4B /* LaunchScreen.storyboard */; };
+		EF3068272079A23B007B4F4B /* sessionCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3068262079A23B007B4F4B /* sessionCustomCell.swift */; };
+		EF3068292079AD4B007B4F4B /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3068282079AD4B007B4F4B /* Session.swift */; };
+		EF30682D2079B08E007B4F4B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF30682C2079AE69007B4F4B /* GoogleService-Info.plist */; };
+		EF30682F2079B399007B4F4B /* addViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF30682E2079B399007B4F4B /* addViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D0A9F18CBCC43E498DF2759 /* Pods_AskAway.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AskAway.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEED0D166D7853550397D014 /* Pods-AskAway.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AskAway.release.xcconfig"; path = "Pods/Target Support Files/Pods-AskAway/Pods-AskAway.release.xcconfig"; sourceTree = "<group>"; };
+		BC19B284AE3B0B4CEFA27507 /* Pods-AskAway.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AskAway.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AskAway/Pods-AskAway.debug.xcconfig"; sourceTree = "<group>"; };
 		EF306811207998F1007B4F4B /* AskAway.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AskAway.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF306814207998F1007B4F4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF306816207998F1007B4F4B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +30,10 @@
 		EF30681B207998F1007B4F4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF30681E207998F1007B4F4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF306820207998F1007B4F4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF3068262079A23B007B4F4B /* sessionCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sessionCustomCell.swift; sourceTree = "<group>"; };
+		EF3068282079AD4B007B4F4B /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		EF30682C2079AE69007B4F4B /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EF30682E2079B399007B4F4B /* addViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E612E2AD8C8CDE299DA03F4C /* Pods_AskAway.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4AE8077C0AAE00E3AC72BDD4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2D0A9F18CBCC43E498DF2759 /* Pods_AskAway.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E23C02B13BB44CF2BCAA2848 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BC19B284AE3B0B4CEFA27507 /* Pods-AskAway.debug.xcconfig */,
+				AEED0D166D7853550397D014 /* Pods-AskAway.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		EF306808207998F1007B4F4B = {
 			isa = PBXGroup;
 			children = (
 				EF306813207998F1007B4F4B /* AskAway */,
 				EF306812207998F1007B4F4B /* Products */,
+				E23C02B13BB44CF2BCAA2848 /* Pods */,
+				4AE8077C0AAE00E3AC72BDD4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,10 +88,14 @@
 			children = (
 				EF306814207998F1007B4F4B /* AppDelegate.swift */,
 				EF306816207998F1007B4F4B /* ViewController.swift */,
+				EF3068282079AD4B007B4F4B /* Session.swift */,
+				EF3068262079A23B007B4F4B /* sessionCustomCell.swift */,
 				EF306818207998F1007B4F4B /* Main.storyboard */,
+				EF30682E2079B399007B4F4B /* addViewController.swift */,
 				EF30681B207998F1007B4F4B /* Assets.xcassets */,
 				EF30681D207998F1007B4F4B /* LaunchScreen.storyboard */,
 				EF306820207998F1007B4F4B /* Info.plist */,
+				EF30682C2079AE69007B4F4B /* GoogleService-Info.plist */,
 			);
 			path = AskAway;
 			sourceTree = "<group>";
@@ -71,9 +107,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EF306823207998F1007B4F4B /* Build configuration list for PBXNativeTarget "AskAway" */;
 			buildPhases = (
+				51C7A2EFECC4AC4D97E43892 /* [CP] Check Pods Manifest.lock */,
 				EF30680D207998F1007B4F4B /* Sources */,
 				EF30680E207998F1007B4F4B /* Frameworks */,
 				EF30680F207998F1007B4F4B /* Resources */,
+				6CC5A80145A82009CE5D4E77 /* [CP] Embed Pods Frameworks */,
+				8CA511E5775E73744661E9A6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF30681F207998F1007B4F4B /* LaunchScreen.storyboard in Resources */,
+				EF30682D2079B08E007B4F4B /* GoogleService-Info.plist in Resources */,
 				EF30681C207998F1007B4F4B /* Assets.xcassets in Resources */,
 				EF30681A207998F1007B4F4B /* Main.storyboard in Resources */,
 			);
@@ -131,12 +171,71 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		51C7A2EFECC4AC4D97E43892 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AskAway-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6CC5A80145A82009CE5D4E77 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AskAway/Pods-AskAway-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AskAway/Pods-AskAway-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8CA511E5775E73744661E9A6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AskAway/Pods-AskAway-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EF30680D207998F1007B4F4B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF3068292079AD4B007B4F4B /* Session.swift in Sources */,
+				EF3068272079A23B007B4F4B /* sessionCustomCell.swift in Sources */,
 				EF306817207998F1007B4F4B /* ViewController.swift in Sources */,
+				EF30682F2079B399007B4F4B /* addViewController.swift in Sources */,
 				EF306815207998F1007B4F4B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +371,7 @@
 		};
 		EF306824207998F1007B4F4B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC19B284AE3B0B4CEFA27507 /* Pods-AskAway.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +387,7 @@
 		};
 		EF306825207998F1007B4F4B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEED0D166D7853550397D014 /* Pods-AskAway.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

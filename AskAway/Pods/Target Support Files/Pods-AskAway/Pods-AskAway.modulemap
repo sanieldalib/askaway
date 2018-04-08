@@ -1,0 +1,6 @@
+framework module Pods_AskAway {
+  umbrella header "Pods-AskAway-umbrella.h"
+
+  export *
+  module * { export * }
+}
