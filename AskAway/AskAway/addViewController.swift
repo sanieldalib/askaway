@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class addViewController: UIViewController {
 
@@ -19,7 +20,7 @@ class addViewController: UIViewController {
     
     @IBAction func createPressed(_ sender: UIButton) {
         if (nameField.text! != "" && ownerField.text! != "" && locationField.text! != ""){
-        let session1 = Session(name: nameField.text!, owner: ownerField.text!, location: locationField.text!, questionsOn: questionsSwitch.isOn, queueOn: queueSwitch.isOn)
+            let session1 = Session(name: nameField.text!, owner: (Auth.auth().currentUser?.uid)!, location: locationField.text!, questionsOn: questionsSwitch.isOn, queueOn: queueSwitch.isOn)
         
         db().addSessionDB(session: session1)
     }

@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Firebase
 
 struct Session {
     var name : String = ""

@@ -8,6 +8,13 @@
 
 import UIKit
 
+let primaryColor = UIColor(red: 63/255, green: 67/255, blue: 74/255, alpha: 1)
+let secondaryColor = UIColor(red: 42/255, green: 43/255, blue: 45/255, alpha: 1)
+let mainColor = UIColor(red: 56/255, green: 62/255, blue: 72/255, alpha: 1)
+let backgroundColor = UIColor(red: 0.91, green: 0.91, blue: 0.91, alpha: 1)
+let buttonColor = UIColor(red: 151/255, green: 151/255, blue: 151/255, alpha: 1)
+//let font = [NSAttributedStringKey.font: UIFont(name: "Cow Jump", size: 20.0 )]
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 

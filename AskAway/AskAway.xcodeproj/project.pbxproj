@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		E612E2AD8C8CDE299DA03F4C /* Pods_AskAway.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D0A9F18CBCC43E498DF2759 /* Pods_AskAway.framework */; };
 		EF306815207998F1007B4F4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF306814207998F1007B4F4B /* AppDelegate.swift */; };
-		EF306817207998F1007B4F4B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF306816207998F1007B4F4B /* ViewController.swift */; };
+		EF306817207998F1007B4F4B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF306816207998F1007B4F4B /* HomeViewController.swift */; };
 		EF30681A207998F1007B4F4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF306818207998F1007B4F4B /* Main.storyboard */; };
 		EF30681C207998F1007B4F4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF30681B207998F1007B4F4B /* Assets.xcassets */; };
 		EF30681F207998F1007B4F4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF30681D207998F1007B4F4B /* LaunchScreen.storyboard */; };
@@ -18,6 +18,22 @@
 		EF30682D2079B08E007B4F4B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF30682C2079AE69007B4F4B /* GoogleService-Info.plist */; };
 		EF30682F2079B399007B4F4B /* addViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF30682E2079B399007B4F4B /* addViewController.swift */; };
 		EF3068332079C00E007B4F4B /* db.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3068322079C00E007B4F4B /* db.swift */; };
+		EF6657D52085ECE400E1DE47 /* signUpMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6657D42085ECE400E1DE47 /* signUpMenuViewController.swift */; };
+		EF6657D7208728D700E1DE47 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6657D6208728D700E1DE47 /* LoginViewController.swift */; };
+		EF6657D92087294500E1DE47 /* RoundedWhiteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6657D82087294500E1DE47 /* RoundedWhiteButton.swift */; };
+		EF6657DB2087298900E1DE47 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6657DA2087298900E1DE47 /* SignUpViewController.swift */; };
+		EF6657DD20872A1300E1DE47 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6657DC20872A1300E1DE47 /* Extensions.swift */; };
+		EF6657E020872C1300E1DE47 /* Confetti_Stream.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF6657DF20872C1300E1DE47 /* Confetti_Stream.ttf */; };
+		EF6657ED20872DC200E1DE47 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF6657E320872DBB00E1DE47 /* OpenSans-Regular.ttf */; };
+		EF6657EE20872DC200E1DE47 /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF6657E420872DBB00E1DE47 /* OpenSans-Semibold.ttf */; };
+		EF6657EF20872DC200E1DE47 /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF6657E520872DBC00E1DE47 /* OpenSans-Italic.ttf */; };
+		EF6657F020872DC200E1DE47 /* OpenSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF6657E620872DBD00E1DE47 /* OpenSans-ExtraBoldItalic.ttf */; };
+		EF6657F120872DC200E1DE47 /* OpenSans-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF6657E720872DBD00E1DE47 /* OpenSans-SemiboldItalic.ttf */; };
+		EF6657F220872DC200E1DE47 /* OpenSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF6657E820872DBE00E1DE47 /* OpenSans-LightItalic.ttf */; };
+		EF6657F320872DC200E1DE47 /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF6657E920872DBF00E1DE47 /* OpenSans-BoldItalic.ttf */; };
+		EF6657F420872DC200E1DE47 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF6657EA20872DBF00E1DE47 /* OpenSans-Bold.ttf */; };
+		EF6657F520872DC200E1DE47 /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF6657EB20872DC000E1DE47 /* OpenSans-ExtraBold.ttf */; };
+		EF6657F620872DC200E1DE47 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF6657EC20872DC100E1DE47 /* OpenSans-Light.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +42,7 @@
 		BC19B284AE3B0B4CEFA27507 /* Pods-AskAway.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AskAway.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AskAway/Pods-AskAway.debug.xcconfig"; sourceTree = "<group>"; };
 		EF306811207998F1007B4F4B /* AskAway.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AskAway.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF306814207998F1007B4F4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EF306816207998F1007B4F4B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EF306816207998F1007B4F4B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		EF306819207998F1007B4F4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EF30681B207998F1007B4F4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF30681E207998F1007B4F4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +52,22 @@
 		EF30682C2079AE69007B4F4B /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EF30682E2079B399007B4F4B /* addViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addViewController.swift; sourceTree = "<group>"; };
 		EF3068322079C00E007B4F4B /* db.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = db.swift; sourceTree = "<group>"; };
+		EF6657D42085ECE400E1DE47 /* signUpMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUpMenuViewController.swift; sourceTree = "<group>"; };
+		EF6657D6208728D700E1DE47 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		EF6657D82087294500E1DE47 /* RoundedWhiteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedWhiteButton.swift; sourceTree = "<group>"; };
+		EF6657DA2087298900E1DE47 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		EF6657DC20872A1300E1DE47 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		EF6657DF20872C1300E1DE47 /* Confetti_Stream.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Confetti_Stream.ttf; path = "../../../../../../../../Downloads/cow-jump/Confetti_Stream.ttf"; sourceTree = "<group>"; };
+		EF6657E320872DBB00E1DE47 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-Regular.ttf"; path = "../../../../../../../../Downloads/open-sans (1)/OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		EF6657E420872DBB00E1DE47 /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-Semibold.ttf"; path = "../../../../../../../../Downloads/open-sans (1)/OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
+		EF6657E520872DBC00E1DE47 /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-Italic.ttf"; path = "../../../../../../../../Downloads/open-sans (1)/OpenSans-Italic.ttf"; sourceTree = "<group>"; };
+		EF6657E620872DBD00E1DE47 /* OpenSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-ExtraBoldItalic.ttf"; path = "../../../../../../../../Downloads/open-sans (1)/OpenSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		EF6657E720872DBD00E1DE47 /* OpenSans-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-SemiboldItalic.ttf"; path = "../../../../../../../../Downloads/open-sans (1)/OpenSans-SemiboldItalic.ttf"; sourceTree = "<group>"; };
+		EF6657E820872DBE00E1DE47 /* OpenSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-LightItalic.ttf"; path = "../../../../../../../../Downloads/open-sans (1)/OpenSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		EF6657E920872DBF00E1DE47 /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-BoldItalic.ttf"; path = "../../../../../../../../Downloads/open-sans (1)/OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		EF6657EA20872DBF00E1DE47 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-Bold.ttf"; path = "../../../../../../../../Downloads/open-sans (1)/OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		EF6657EB20872DC000E1DE47 /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-ExtraBold.ttf"; path = "../../../../../../../../Downloads/open-sans (1)/OpenSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		EF6657EC20872DC100E1DE47 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-Light.ttf"; path = "../../../../../../../../Downloads/open-sans (1)/OpenSans-Light.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,10 +122,16 @@
 			children = (
 				EF3068322079C00E007B4F4B /* db.swift */,
 				EF306814207998F1007B4F4B /* AppDelegate.swift */,
-				EF306816207998F1007B4F4B /* ViewController.swift */,
+				EF306816207998F1007B4F4B /* HomeViewController.swift */,
+				EF6657DE20872C0200E1DE47 /* Fonts */,
 				EF3068282079AD4B007B4F4B /* Session.swift */,
 				EF3068262079A23B007B4F4B /* sessionCustomCell.swift */,
 				EF306818207998F1007B4F4B /* Main.storyboard */,
+				EF6657DC20872A1300E1DE47 /* Extensions.swift */,
+				EF6657DA2087298900E1DE47 /* SignUpViewController.swift */,
+				EF6657D6208728D700E1DE47 /* LoginViewController.swift */,
+				EF6657D82087294500E1DE47 /* RoundedWhiteButton.swift */,
+				EF6657D42085ECE400E1DE47 /* signUpMenuViewController.swift */,
 				EF30682E2079B399007B4F4B /* addViewController.swift */,
 				EF30681B207998F1007B4F4B /* Assets.xcassets */,
 				EF30681D207998F1007B4F4B /* LaunchScreen.storyboard */,
@@ -101,6 +139,24 @@
 				EF30682C2079AE69007B4F4B /* GoogleService-Info.plist */,
 			);
 			path = AskAway;
+			sourceTree = "<group>";
+		};
+		EF6657DE20872C0200E1DE47 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				EF6657EA20872DBF00E1DE47 /* OpenSans-Bold.ttf */,
+				EF6657E920872DBF00E1DE47 /* OpenSans-BoldItalic.ttf */,
+				EF6657EB20872DC000E1DE47 /* OpenSans-ExtraBold.ttf */,
+				EF6657E620872DBD00E1DE47 /* OpenSans-ExtraBoldItalic.ttf */,
+				EF6657E520872DBC00E1DE47 /* OpenSans-Italic.ttf */,
+				EF6657EC20872DC100E1DE47 /* OpenSans-Light.ttf */,
+				EF6657E820872DBE00E1DE47 /* OpenSans-LightItalic.ttf */,
+				EF6657E320872DBB00E1DE47 /* OpenSans-Regular.ttf */,
+				EF6657E420872DBB00E1DE47 /* OpenSans-Semibold.ttf */,
+				EF6657E720872DBD00E1DE47 /* OpenSans-SemiboldItalic.ttf */,
+				EF6657DF20872C1300E1DE47 /* Confetti_Stream.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,8 +222,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF30681F207998F1007B4F4B /* LaunchScreen.storyboard in Resources */,
+				EF6657F020872DC200E1DE47 /* OpenSans-ExtraBoldItalic.ttf in Resources */,
+				EF6657EF20872DC200E1DE47 /* OpenSans-Italic.ttf in Resources */,
+				EF6657F620872DC200E1DE47 /* OpenSans-Light.ttf in Resources */,
 				EF30682D2079B08E007B4F4B /* GoogleService-Info.plist in Resources */,
+				EF6657E020872C1300E1DE47 /* Confetti_Stream.ttf in Resources */,
+				EF6657F220872DC200E1DE47 /* OpenSans-LightItalic.ttf in Resources */,
+				EF6657F320872DC200E1DE47 /* OpenSans-BoldItalic.ttf in Resources */,
 				EF30681C207998F1007B4F4B /* Assets.xcassets in Resources */,
+				EF6657F120872DC200E1DE47 /* OpenSans-SemiboldItalic.ttf in Resources */,
+				EF6657F520872DC200E1DE47 /* OpenSans-ExtraBold.ttf in Resources */,
+				EF6657ED20872DC200E1DE47 /* OpenSans-Regular.ttf in Resources */,
+				EF6657F420872DC200E1DE47 /* OpenSans-Bold.ttf in Resources */,
+				EF6657EE20872DC200E1DE47 /* OpenSans-Semibold.ttf in Resources */,
 				EF30681A207998F1007B4F4B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -200,13 +267,19 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-AskAway/Pods-AskAway-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DGElasticPullToRefresh/DGElasticPullToRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DGElasticPullToRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -221,9 +294,26 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AskAway/Pods-AskAway-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseFacebookAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseGoogleAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebasePhoneAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseTwitterAuthUI.bundle",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterShareExtensionUIResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseFacebookAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseGoogleAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebasePhoneAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseTwitterAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterKitResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterShareExtensionUIResources.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -237,11 +327,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF6657D52085ECE400E1DE47 /* signUpMenuViewController.swift in Sources */,
 				EF3068292079AD4B007B4F4B /* Session.swift in Sources */,
+				EF6657D92087294500E1DE47 /* RoundedWhiteButton.swift in Sources */,
 				EF3068332079C00E007B4F4B /* db.swift in Sources */,
+				EF6657DB2087298900E1DE47 /* SignUpViewController.swift in Sources */,
 				EF3068272079A23B007B4F4B /* sessionCustomCell.swift in Sources */,
-				EF306817207998F1007B4F4B /* ViewController.swift in Sources */,
+				EF6657D7208728D700E1DE47 /* LoginViewController.swift in Sources */,
+				EF306817207998F1007B4F4B /* HomeViewController.swift in Sources */,
 				EF30682F2079B399007B4F4B /* addViewController.swift in Sources */,
+				EF6657DD20872A1300E1DE47 /* Extensions.swift in Sources */,
 				EF306815207998F1007B4F4B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -383,7 +478,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FWU4GS7RGH;
 				INFOPLIST_FILE = AskAway/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dsalib.AskAway;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -399,7 +493,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FWU4GS7RGH;
 				INFOPLIST_FILE = AskAway/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dsalib.AskAway;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
