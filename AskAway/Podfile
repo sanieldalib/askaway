@@ -8,15 +8,12 @@ target 'AskAway' do
   pod 'Firebase/Core'
   pod 'Firebase/Database'
   pod 'SideMenu'
-  #pod 'FirebaseUI'
+  pod 'SwiftOverlays', '~> 4.0.0'
   pod 'DGElasticPullToRefresh' , :git => 'https://github.com/sammygutierrez/DGElasticPullToRefresh'
-  #pod 'FoldingCell'
-
-
-
-
-
-
+  pod 'XLPagerTabStrip'
+  pod 'SwiftyShadow', '~> 1.6.0'
+  pod 'PopupDialog', '~> 0.7'
+  pod 'JSQMessagesViewController'
   # Pods for AskAway
 
 end

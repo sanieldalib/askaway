@@ -12,10 +12,14 @@ import Firebase
 
 class SignUpViewController:UIViewController, UITextFieldDelegate {
     
-    @IBOutlet weak var usernameField: UITextField!
+    @IBOutlet weak var firstNameField: UITextField!
+    @IBOutlet weak var lastNameField: UITextField!
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var dismissButton: UIButton!
+    
+    var profile: Profile?
+    var DB = db()
     
     var continueButton: RoundedWhiteButton!
     var activityView: UIActivityIndicatorView!
@@ -43,11 +47,13 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
         activityView.center = continueButton.center
         view.addSubview(activityView)
         
-        usernameField.delegate = self
+        firstNameField.delegate = self
+        lastNameField.delegate = self
         emailField.delegate = self
         passwordField.delegate = self
         
-        usernameField.addTarget(self, action: #selector(textFieldChanged), for: .editingChanged)
+        firstNameField.addTarget(self, action: #selector(textFieldChanged), for: .editingChanged)
+        lastNameField.addTarget(self, action: #selector(textFieldChanged), for: .editingChanged)
         emailField.addTarget(self, action: #selector(textFieldChanged), for: .editingChanged)
         passwordField.addTarget(self, action: #selector(textFieldChanged), for: .editingChanged)
     }
@@ -56,14 +62,15 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        usernameField.becomeFirstResponder()
+        firstNameField.becomeFirstResponder()
         NotificationCenter.default.addObserver(self, selector:#selector(keyboardWillAppear), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
         
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        usernameField.resignFirstResponder()
+        firstNameField.resignFirstResponder()
+        lastNameField.resignFirstResponder()
         emailField.resignFirstResponder()
         passwordField.resignFirstResponder()
         
@@ -77,7 +84,11 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func handleDismissButton(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
+        if let navCont = self.navigationController {
+        navCont.popViewController(animated: true)
+        } else {
+            self.dismiss(animated: true, completion: nil)
+        }
     }
     
     /**
@@ -102,11 +113,13 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
      */
     
     @objc func textFieldChanged(_ target:UITextField) {
-        let username = usernameField.text
+        let firstName = firstNameField.text
+        let lastName = lastNameField.text
         let email = emailField.text
         let password = passwordField.text
-        let formFilled = username != nil && username != "" && email != nil && email != "" && password != nil && password != ""
+        let formFilled = firstName != nil && firstName != "" && lastName != nil && lastName != "" && email != nil && email != "" && password != nil && password != ""
         setContinueButton(enabled: formFilled)
+        continueButton.setTitle("Continue", for: .normal)
     }
     
     
@@ -116,8 +129,12 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
         // Resigns the target textField and assigns the next textField in the form.
         
         switch textField {
-        case usernameField:
-            usernameField.resignFirstResponder()
+        case firstNameField:
+            firstNameField.resignFirstResponder()
+            lastNameField.becomeFirstResponder()
+            break
+        case lastNameField:
+            lastNameField.resignFirstResponder()
             emailField.becomeFirstResponder()
             break
         case emailField:
@@ -148,7 +165,8 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
     }
     
     @objc func handleSignUp() {
-        guard let username = usernameField.text else { return }
+        guard let firstName = firstNameField.text else { return }
+        guard let lastName = lastNameField.text else { return }
         guard let email = emailField.text else { return }
         guard let pass = passwordField.text else { return }
         
@@ -159,18 +177,15 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
         Auth.auth().createUser(withEmail: email, password: pass) { (user, error) in
             if error == nil && user != nil {
                 print("User Created!")
-                
-                let usernameRequest = Auth.auth().currentUser?.createProfileChangeRequest()
-                usernameRequest?.displayName = username
-                usernameRequest?.commitChanges(completion: { (error) in
-                    if error == nil {
-                        print("Username set")
-                    } else {
-                        print(error!.localizedDescription)
-                        self.dismiss(animated: true, completion: nil)
-                    }
+                let userProfile = Profile.init(firstName: firstName, lastName: lastName, uid: (Auth.auth().currentUser?.uid)!, email: email)
+                self.DB.addUser(person: userProfile, callback: {
+                    currentUser = userProfile
+                    self.performSegue(withIdentifier: "toHomefromSignin", sender: self)
                 })
+    
             } else {
+                self.activityView.stopAnimating()
+                self.continueButton.setTitle("Invalid Data", for: .normal)
                 print("Error: \(error!.localizedDescription)")
             }
         }

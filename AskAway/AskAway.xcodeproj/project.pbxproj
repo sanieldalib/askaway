@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		E612E2AD8C8CDE299DA03F4C /* Pods_AskAway.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D0A9F18CBCC43E498DF2759 /* Pods_AskAway.framework */; };
 		EF306815207998F1007B4F4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF306814207998F1007B4F4B /* AppDelegate.swift */; };
-		EF306817207998F1007B4F4B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF306816207998F1007B4F4B /* HomeViewController.swift */; };
 		EF30681A207998F1007B4F4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF306818207998F1007B4F4B /* Main.storyboard */; };
 		EF30681C207998F1007B4F4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF30681B207998F1007B4F4B /* Assets.xcassets */; };
 		EF30681F207998F1007B4F4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF30681D207998F1007B4F4B /* LaunchScreen.storyboard */; };
@@ -18,6 +17,10 @@
 		EF30682D2079B08E007B4F4B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF30682C2079AE69007B4F4B /* GoogleService-Info.plist */; };
 		EF30682F2079B399007B4F4B /* addViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF30682E2079B399007B4F4B /* addViewController.swift */; };
 		EF3068332079C00E007B4F4B /* db.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3068322079C00E007B4F4B /* db.swift */; };
+		EF497E0A2087C4C100280B58 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF497E092087C4C100280B58 /* Profile.swift */; };
+		EF497E21208803BB00280B58 /* HomeTab1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF497E20208803BB00280B58 /* HomeTab1ViewController.swift */; };
+		EF497E23208803C100280B58 /* HomeTab2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF497E22208803C100280B58 /* HomeTab2ViewController.swift */; };
+		EF499268208A77060007F61F /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF499267208A77060007F61F /* HomeScreenViewController.swift */; };
 		EF6657D52085ECE400E1DE47 /* signUpMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6657D42085ECE400E1DE47 /* signUpMenuViewController.swift */; };
 		EF6657D7208728D700E1DE47 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6657D6208728D700E1DE47 /* LoginViewController.swift */; };
 		EF6657D92087294500E1DE47 /* RoundedWhiteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6657D82087294500E1DE47 /* RoundedWhiteButton.swift */; };
@@ -34,6 +37,17 @@
 		EF6657F420872DC200E1DE47 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF6657EA20872DBF00E1DE47 /* OpenSans-Bold.ttf */; };
 		EF6657F520872DC200E1DE47 /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF6657EB20872DC000E1DE47 /* OpenSans-ExtraBold.ttf */; };
 		EF6657F620872DC200E1DE47 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF6657EC20872DC100E1DE47 /* OpenSans-Light.ttf */; };
+		EFCB604A208C8A3B004B54D9 /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCB6049208C8A3B004B54D9 /* QuestionsViewController.swift */; };
+		EFCB604C208C8AAD004B54D9 /* SessionHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCB604B208C8AAD004B54D9 /* SessionHomeViewController.swift */; };
+		EFF79796208D5DB1007823DF /* QueueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF79795208D5DB1007823DF /* QueueViewController.swift */; };
+		EFF79798208D81FC007823DF /* questionHeaderViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF79797208D81FC007823DF /* questionHeaderViewCell.swift */; };
+		EFF7979D208DB2A6007823DF /* PasswordModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF7979B208DB2A6007823DF /* PasswordModalViewController.swift */; };
+		EFF7979E208DB2A6007823DF /* PasswordModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFF7979C208DB2A6007823DF /* PasswordModalViewController.xib */; };
+		EFFDEDC7208DDBD6007D1F0A /* queueHeaderViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFDEDC6208DDBD6007D1F0A /* queueHeaderViewCell.swift */; };
+		EFFDEDC9208DDE47007D1F0A /* queueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFDEDC8208DDE47007D1F0A /* queueCell.swift */; };
+		EFFDEDCC208DE8EE007D1F0A /* QuestionModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFDEDCA208DE8EE007D1F0A /* QuestionModalViewController.swift */; };
+		EFFDEDCD208DE8EE007D1F0A /* QuestionModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFFDEDCB208DE8EE007D1F0A /* QuestionModalViewController.xib */; };
+		EFFDEDCF208DEDA1007D1F0A /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFDEDCE208DEDA1007D1F0A /* Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,7 +56,6 @@
 		BC19B284AE3B0B4CEFA27507 /* Pods-AskAway.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AskAway.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AskAway/Pods-AskAway.debug.xcconfig"; sourceTree = "<group>"; };
 		EF306811207998F1007B4F4B /* AskAway.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AskAway.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF306814207998F1007B4F4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EF306816207998F1007B4F4B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		EF306819207998F1007B4F4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EF30681B207998F1007B4F4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF30681E207998F1007B4F4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -52,6 +65,10 @@
 		EF30682C2079AE69007B4F4B /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EF30682E2079B399007B4F4B /* addViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addViewController.swift; sourceTree = "<group>"; };
 		EF3068322079C00E007B4F4B /* db.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = db.swift; sourceTree = "<group>"; };
+		EF497E092087C4C100280B58 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		EF497E20208803BB00280B58 /* HomeTab1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTab1ViewController.swift; sourceTree = "<group>"; };
+		EF497E22208803C100280B58 /* HomeTab2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTab2ViewController.swift; sourceTree = "<group>"; };
+		EF499267208A77060007F61F /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		EF6657D42085ECE400E1DE47 /* signUpMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUpMenuViewController.swift; sourceTree = "<group>"; };
 		EF6657D6208728D700E1DE47 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EF6657D82087294500E1DE47 /* RoundedWhiteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedWhiteButton.swift; sourceTree = "<group>"; };
@@ -68,6 +85,17 @@
 		EF6657EA20872DBF00E1DE47 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-Bold.ttf"; path = "../../../../../../../../Downloads/open-sans (1)/OpenSans-Bold.ttf"; sourceTree = "<group>"; };
 		EF6657EB20872DC000E1DE47 /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-ExtraBold.ttf"; path = "../../../../../../../../Downloads/open-sans (1)/OpenSans-ExtraBold.ttf"; sourceTree = "<group>"; };
 		EF6657EC20872DC100E1DE47 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-Light.ttf"; path = "../../../../../../../../Downloads/open-sans (1)/OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		EFCB6049208C8A3B004B54D9 /* QuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
+		EFCB604B208C8AAD004B54D9 /* SessionHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionHomeViewController.swift; sourceTree = "<group>"; };
+		EFF79795208D5DB1007823DF /* QueueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueViewController.swift; sourceTree = "<group>"; };
+		EFF79797208D81FC007823DF /* questionHeaderViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = questionHeaderViewCell.swift; sourceTree = "<group>"; };
+		EFF7979B208DB2A6007823DF /* PasswordModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordModalViewController.swift; sourceTree = "<group>"; };
+		EFF7979C208DB2A6007823DF /* PasswordModalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PasswordModalViewController.xib; sourceTree = "<group>"; };
+		EFFDEDC6208DDBD6007D1F0A /* queueHeaderViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = queueHeaderViewCell.swift; sourceTree = "<group>"; };
+		EFFDEDC8208DDE47007D1F0A /* queueCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = queueCell.swift; sourceTree = "<group>"; };
+		EFFDEDCA208DE8EE007D1F0A /* QuestionModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionModalViewController.swift; sourceTree = "<group>"; };
+		EFFDEDCB208DE8EE007D1F0A /* QuestionModalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionModalViewController.xib; sourceTree = "<group>"; };
+		EFFDEDCE208DEDA1007D1F0A /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,13 +150,28 @@
 			children = (
 				EF3068322079C00E007B4F4B /* db.swift */,
 				EF306814207998F1007B4F4B /* AppDelegate.swift */,
-				EF306816207998F1007B4F4B /* HomeViewController.swift */,
 				EF6657DE20872C0200E1DE47 /* Fonts */,
 				EF3068282079AD4B007B4F4B /* Session.swift */,
+				EF497E092087C4C100280B58 /* Profile.swift */,
+				EFFDEDCE208DEDA1007D1F0A /* Question.swift */,
 				EF3068262079A23B007B4F4B /* sessionCustomCell.swift */,
 				EF306818207998F1007B4F4B /* Main.storyboard */,
+				EFFDEDC8208DDE47007D1F0A /* queueCell.swift */,
+				EFF79797208D81FC007823DF /* questionHeaderViewCell.swift */,
+				EFFDEDC6208DDBD6007D1F0A /* queueHeaderViewCell.swift */,
+				EFF79795208D5DB1007823DF /* QueueViewController.swift */,
+				EFCB604B208C8AAD004B54D9 /* SessionHomeViewController.swift */,
+				EFCB6049208C8A3B004B54D9 /* QuestionsViewController.swift */,
+				EF499267208A77060007F61F /* HomeScreenViewController.swift */,
+				EF497E20208803BB00280B58 /* HomeTab1ViewController.swift */,
+				EFF7979B208DB2A6007823DF /* PasswordModalViewController.swift */,
+				EFF7979C208DB2A6007823DF /* PasswordModalViewController.xib */,
+				EFFDEDCA208DE8EE007D1F0A /* QuestionModalViewController.swift */,
+				EFFDEDCB208DE8EE007D1F0A /* QuestionModalViewController.xib */,
+				EF497E22208803C100280B58 /* HomeTab2ViewController.swift */,
 				EF6657DC20872A1300E1DE47 /* Extensions.swift */,
 				EF6657DA2087298900E1DE47 /* SignUpViewController.swift */,
+				EF497E0420876A6000280B58 /* Home Pages */,
 				EF6657D6208728D700E1DE47 /* LoginViewController.swift */,
 				EF6657D82087294500E1DE47 /* RoundedWhiteButton.swift */,
 				EF6657D42085ECE400E1DE47 /* signUpMenuViewController.swift */,
@@ -139,6 +182,13 @@
 				EF30682C2079AE69007B4F4B /* GoogleService-Info.plist */,
 			);
 			path = AskAway;
+			sourceTree = "<group>";
+		};
+		EF497E0420876A6000280B58 /* Home Pages */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Home Pages";
 			sourceTree = "<group>";
 		};
 		EF6657DE20872C0200E1DE47 /* Fonts */ = {
@@ -227,6 +277,7 @@
 				EF6657F620872DC200E1DE47 /* OpenSans-Light.ttf in Resources */,
 				EF30682D2079B08E007B4F4B /* GoogleService-Info.plist in Resources */,
 				EF6657E020872C1300E1DE47 /* Confetti_Stream.ttf in Resources */,
+				EFFDEDCD208DE8EE007D1F0A /* QuestionModalViewController.xib in Resources */,
 				EF6657F220872DC200E1DE47 /* OpenSans-LightItalic.ttf in Resources */,
 				EF6657F320872DC200E1DE47 /* OpenSans-BoldItalic.ttf in Resources */,
 				EF30681C207998F1007B4F4B /* Assets.xcassets in Resources */,
@@ -236,6 +287,7 @@
 				EF6657F420872DC200E1DE47 /* OpenSans-Bold.ttf in Resources */,
 				EF6657EE20872DC200E1DE47 /* OpenSans-Semibold.ttf in Resources */,
 				EF30681A207998F1007B4F4B /* Main.storyboard in Resources */,
+				EFF7979E208DB2A6007823DF /* PasswordModalViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,18 +320,32 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-AskAway/Pods-AskAway-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/DGElasticPullToRefresh/DGElasticPullToRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/DynamicBlurView/DynamicBlurView.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQMessagesViewController/JSQMessagesViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQSystemSoundPlayer/JSQSystemSoundPlayer.framework",
+				"${BUILT_PRODUCTS_DIR}/PopupDialog/PopupDialog.framework",
 				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftOverlays/SwiftOverlays.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyShadow/SwiftyShadow.framework",
+				"${BUILT_PRODUCTS_DIR}/XLPagerTabStrip/XLPagerTabStrip.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DGElasticPullToRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DynamicBlurView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQMessagesViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQSystemSoundPlayer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PopupDialog.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftOverlays.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyShadow.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XLPagerTabStrip.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -327,14 +393,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF499268208A77060007F61F /* HomeScreenViewController.swift in Sources */,
 				EF6657D52085ECE400E1DE47 /* signUpMenuViewController.swift in Sources */,
+				EF497E0A2087C4C100280B58 /* Profile.swift in Sources */,
+				EF497E21208803BB00280B58 /* HomeTab1ViewController.swift in Sources */,
 				EF3068292079AD4B007B4F4B /* Session.swift in Sources */,
 				EF6657D92087294500E1DE47 /* RoundedWhiteButton.swift in Sources */,
+				EFCB604C208C8AAD004B54D9 /* SessionHomeViewController.swift in Sources */,
 				EF3068332079C00E007B4F4B /* db.swift in Sources */,
+				EFF79796208D5DB1007823DF /* QueueViewController.swift in Sources */,
+				EFFDEDC7208DDBD6007D1F0A /* queueHeaderViewCell.swift in Sources */,
 				EF6657DB2087298900E1DE47 /* SignUpViewController.swift in Sources */,
+				EFF79798208D81FC007823DF /* questionHeaderViewCell.swift in Sources */,
+				EFFDEDC9208DDE47007D1F0A /* queueCell.swift in Sources */,
 				EF3068272079A23B007B4F4B /* sessionCustomCell.swift in Sources */,
+				EF497E23208803C100280B58 /* HomeTab2ViewController.swift in Sources */,
+				EFF7979D208DB2A6007823DF /* PasswordModalViewController.swift in Sources */,
 				EF6657D7208728D700E1DE47 /* LoginViewController.swift in Sources */,
-				EF306817207998F1007B4F4B /* HomeViewController.swift in Sources */,
+				EFCB604A208C8A3B004B54D9 /* QuestionsViewController.swift in Sources */,
+				EFFDEDCF208DEDA1007D1F0A /* Question.swift in Sources */,
+				EFFDEDCC208DE8EE007D1F0A /* QuestionModalViewController.swift in Sources */,
 				EF30682F2079B399007B4F4B /* addViewController.swift in Sources */,
 				EF6657DD20872A1300E1DE47 /* Extensions.swift in Sources */,
 				EF306815207998F1007B4F4B /* AppDelegate.swift in Sources */,

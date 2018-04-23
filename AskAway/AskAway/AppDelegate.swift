@@ -13,13 +13,20 @@ let secondaryColor = UIColor(red: 42/255, green: 43/255, blue: 45/255, alpha: 1)
 let mainColor = UIColor(red: 56/255, green: 62/255, blue: 72/255, alpha: 1)
 let backgroundColor = UIColor(red: 0.91, green: 0.91, blue: 0.91, alpha: 1)
 let buttonColor = UIColor(red: 151/255, green: 151/255, blue: 151/255, alpha: 1)
-//let font = [NSAttributedStringKey.font: UIFont(name: "Cow Jump", size: 20.0 )]
+let cellColor = UIColor(red: 217/255, green: 217/255, blue: 217/255, alpha: 1)
+let shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.5)
+let disabledColor = UIColor(red: 151/255, green: 151/255, blue: 151/255, alpha: 1)
+
+var currentUser: Profile? {
+    didSet{
+        print(currentUser!.firstName)
+    }
+}
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.

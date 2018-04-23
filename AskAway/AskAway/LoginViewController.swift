@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import FirebaseAuth
 
 class LoginViewController:UIViewController, UITextFieldDelegate {
     
@@ -17,6 +18,7 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
     
     var continueButton: RoundedWhiteButton!
     var activityView: UIActivityIndicatorView!
+    var DB = db()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -71,7 +73,11 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func handleDismissButton(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
+        if let navCont = self.navigationController {
+            navCont.popViewController(animated: true)
+        } else {
+            self.dismiss(animated: true, completion: nil)
+        }
     }
     
     /**
@@ -99,7 +105,9 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
         let email = emailField.text
         let password = passwordField.text
         let formFilled = email != nil && email != "" && password != nil && password != ""
+        continueButton.setTitle("Continue", for: .normal)
         setContinueButton(enabled: formFilled)
+        
     }
     
     
@@ -143,6 +151,16 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
         setContinueButton(enabled: false)
         continueButton.setTitle("", for: .normal)
         activityView.startAnimating()
+        
+        Auth.auth().signIn(withEmail: email, password: pass) { (user, error) in
+            if error == nil && user != nil{
+                self.DB.getUser(uid: user!.uid)
+                self.performSegue(withIdentifier: "toHomefromLogin", sender: self)
+            } else {
+                self.activityView.stopAnimating()
+                self.continueButton.setTitle("Invalid Login", for: .normal)
+            }
+        }
     }
 }
 
