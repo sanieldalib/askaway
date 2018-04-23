@@ -48,6 +48,8 @@
 		EFFDEDCC208DE8EE007D1F0A /* QuestionModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFDEDCA208DE8EE007D1F0A /* QuestionModalViewController.swift */; };
 		EFFDEDCD208DE8EE007D1F0A /* QuestionModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFFDEDCB208DE8EE007D1F0A /* QuestionModalViewController.xib */; };
 		EFFDEDCF208DEDA1007D1F0A /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFDEDCE208DEDA1007D1F0A /* Question.swift */; };
+		EFFDEDD7208E2F8D007D1F0A /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFDEDD6208E2F8D007D1F0A /* MessageCell.swift */; };
+		EFFDEDD9208E3151007D1F0A /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFDEDD8208E3151007D1F0A /* ChatViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,6 +98,8 @@
 		EFFDEDCA208DE8EE007D1F0A /* QuestionModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionModalViewController.swift; sourceTree = "<group>"; };
 		EFFDEDCB208DE8EE007D1F0A /* QuestionModalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionModalViewController.xib; sourceTree = "<group>"; };
 		EFFDEDCE208DEDA1007D1F0A /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		EFFDEDD6208E2F8D007D1F0A /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		EFFDEDD8208E3151007D1F0A /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,34 +152,16 @@
 		EF306813207998F1007B4F4B /* AskAway */ = {
 			isa = PBXGroup;
 			children = (
-				EF3068322079C00E007B4F4B /* db.swift */,
+				EFFDEDDB208E5547007D1F0A /* Model */,
 				EF306814207998F1007B4F4B /* AppDelegate.swift */,
 				EF6657DE20872C0200E1DE47 /* Fonts */,
-				EF3068282079AD4B007B4F4B /* Session.swift */,
-				EF497E092087C4C100280B58 /* Profile.swift */,
-				EFFDEDCE208DEDA1007D1F0A /* Question.swift */,
-				EF3068262079A23B007B4F4B /* sessionCustomCell.swift */,
+				EFFDEDDA208E551B007D1F0A /* Home Controllers */,
 				EF306818207998F1007B4F4B /* Main.storyboard */,
-				EFFDEDC8208DDE47007D1F0A /* queueCell.swift */,
-				EFF79797208D81FC007823DF /* questionHeaderViewCell.swift */,
-				EFFDEDC6208DDBD6007D1F0A /* queueHeaderViewCell.swift */,
-				EFF79795208D5DB1007823DF /* QueueViewController.swift */,
-				EFCB604B208C8AAD004B54D9 /* SessionHomeViewController.swift */,
-				EFCB6049208C8A3B004B54D9 /* QuestionsViewController.swift */,
-				EF499267208A77060007F61F /* HomeScreenViewController.swift */,
-				EF497E20208803BB00280B58 /* HomeTab1ViewController.swift */,
-				EFF7979B208DB2A6007823DF /* PasswordModalViewController.swift */,
-				EFF7979C208DB2A6007823DF /* PasswordModalViewController.xib */,
-				EFFDEDCA208DE8EE007D1F0A /* QuestionModalViewController.swift */,
-				EFFDEDCB208DE8EE007D1F0A /* QuestionModalViewController.xib */,
-				EF497E22208803C100280B58 /* HomeTab2ViewController.swift */,
-				EF6657DC20872A1300E1DE47 /* Extensions.swift */,
-				EF6657DA2087298900E1DE47 /* SignUpViewController.swift */,
+				EFFDEDDE208E55B3007D1F0A /* Popovers */,
+				EFFDEDDD208E558D007D1F0A /* Session Controllers */,
+				EFFDEDDC208E556A007D1F0A /* Custom Cells */,
 				EF497E0420876A6000280B58 /* Home Pages */,
-				EF6657D6208728D700E1DE47 /* LoginViewController.swift */,
-				EF6657D82087294500E1DE47 /* RoundedWhiteButton.swift */,
-				EF6657D42085ECE400E1DE47 /* signUpMenuViewController.swift */,
-				EF30682E2079B399007B4F4B /* addViewController.swift */,
+				EFFDEDDF208E55CB007D1F0A /* SignUp and Login */,
 				EF30681B207998F1007B4F4B /* Assets.xcassets */,
 				EF30681D207998F1007B4F4B /* LaunchScreen.storyboard */,
 				EF306820207998F1007B4F4B /* Info.plist */,
@@ -207,6 +193,74 @@
 				EF6657DF20872C1300E1DE47 /* Confetti_Stream.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		EFFDEDDA208E551B007D1F0A /* Home Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EF30682E2079B399007B4F4B /* addViewController.swift */,
+				EF497E20208803BB00280B58 /* HomeTab1ViewController.swift */,
+				EF497E22208803C100280B58 /* HomeTab2ViewController.swift */,
+				EF499267208A77060007F61F /* HomeScreenViewController.swift */,
+			);
+			path = "Home Controllers";
+			sourceTree = "<group>";
+		};
+		EFFDEDDB208E5547007D1F0A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EFFDEDCE208DEDA1007D1F0A /* Question.swift */,
+				EF497E092087C4C100280B58 /* Profile.swift */,
+				EF3068282079AD4B007B4F4B /* Session.swift */,
+				EF3068322079C00E007B4F4B /* db.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EFFDEDDC208E556A007D1F0A /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				EFFDEDC8208DDE47007D1F0A /* queueCell.swift */,
+				EFF79797208D81FC007823DF /* questionHeaderViewCell.swift */,
+				EFFDEDC6208DDBD6007D1F0A /* queueHeaderViewCell.swift */,
+				EF3068262079A23B007B4F4B /* sessionCustomCell.swift */,
+				EFFDEDD6208E2F8D007D1F0A /* MessageCell.swift */,
+			);
+			path = "Custom Cells";
+			sourceTree = "<group>";
+		};
+		EFFDEDDD208E558D007D1F0A /* Session Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EFFDEDD8208E3151007D1F0A /* ChatViewController.swift */,
+				EFF79795208D5DB1007823DF /* QueueViewController.swift */,
+				EFCB604B208C8AAD004B54D9 /* SessionHomeViewController.swift */,
+				EFCB6049208C8A3B004B54D9 /* QuestionsViewController.swift */,
+			);
+			path = "Session Controllers";
+			sourceTree = "<group>";
+		};
+		EFFDEDDE208E55B3007D1F0A /* Popovers */ = {
+			isa = PBXGroup;
+			children = (
+				EFFDEDCB208DE8EE007D1F0A /* QuestionModalViewController.xib */,
+				EFFDEDCA208DE8EE007D1F0A /* QuestionModalViewController.swift */,
+				EFF7979C208DB2A6007823DF /* PasswordModalViewController.xib */,
+				EFF7979B208DB2A6007823DF /* PasswordModalViewController.swift */,
+			);
+			path = Popovers;
+			sourceTree = "<group>";
+		};
+		EFFDEDDF208E55CB007D1F0A /* SignUp and Login */ = {
+			isa = PBXGroup;
+			children = (
+				EF6657D82087294500E1DE47 /* RoundedWhiteButton.swift */,
+				EF6657DC20872A1300E1DE47 /* Extensions.swift */,
+				EF6657DA2087298900E1DE47 /* SignUpViewController.swift */,
+				EF6657D6208728D700E1DE47 /* LoginViewController.swift */,
+				EF6657D42085ECE400E1DE47 /* signUpMenuViewController.swift */,
+			);
+			path = "SignUp and Login";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -323,8 +377,6 @@
 				"${BUILT_PRODUCTS_DIR}/DynamicBlurView/DynamicBlurView.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
-				"${BUILT_PRODUCTS_DIR}/JSQMessagesViewController/JSQMessagesViewController.framework",
-				"${BUILT_PRODUCTS_DIR}/JSQSystemSoundPlayer/JSQSystemSoundPlayer.framework",
 				"${BUILT_PRODUCTS_DIR}/PopupDialog/PopupDialog.framework",
 				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftOverlays/SwiftOverlays.framework",
@@ -339,8 +391,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DynamicBlurView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQMessagesViewController.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQSystemSoundPlayer.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PopupDialog.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftOverlays.framework",
@@ -403,6 +453,7 @@
 				EF3068332079C00E007B4F4B /* db.swift in Sources */,
 				EFF79796208D5DB1007823DF /* QueueViewController.swift in Sources */,
 				EFFDEDC7208DDBD6007D1F0A /* queueHeaderViewCell.swift in Sources */,
+				EFFDEDD7208E2F8D007D1F0A /* MessageCell.swift in Sources */,
 				EF6657DB2087298900E1DE47 /* SignUpViewController.swift in Sources */,
 				EFF79798208D81FC007823DF /* questionHeaderViewCell.swift in Sources */,
 				EFFDEDC9208DDE47007D1F0A /* queueCell.swift in Sources */,
@@ -410,6 +461,7 @@
 				EF497E23208803C100280B58 /* HomeTab2ViewController.swift in Sources */,
 				EFF7979D208DB2A6007823DF /* PasswordModalViewController.swift in Sources */,
 				EF6657D7208728D700E1DE47 /* LoginViewController.swift in Sources */,
+				EFFDEDD9208E3151007D1F0A /* ChatViewController.swift in Sources */,
 				EFCB604A208C8A3B004B54D9 /* QuestionsViewController.swift in Sources */,
 				EFFDEDCF208DEDA1007D1F0A /* Question.swift in Sources */,
 				EFFDEDCC208DE8EE007D1F0A /* QuestionModalViewController.swift in Sources */,
@@ -556,6 +608,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FWU4GS7RGH;
 				INFOPLIST_FILE = AskAway/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dsalib.AskAway;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -571,6 +624,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FWU4GS7RGH;
 				INFOPLIST_FILE = AskAway/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dsalib.AskAway;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

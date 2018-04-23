@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C03E6D5BE884FE4D3CD32EFB94E57AD4"
+               BlueprintIdentifier = "C43CEF2F2A33F4FE9D7B0669E6F90BD3"
                BlueprintName = "SwiftyShadow"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "SwiftyShadow.framework">

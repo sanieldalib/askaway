@@ -13,7 +13,5 @@ target 'AskAway' do
   pod 'XLPagerTabStrip'
   pod 'SwiftyShadow', '~> 1.6.0'
   pod 'PopupDialog', '~> 0.7'
-  pod 'JSQMessagesViewController'
-  # Pods for AskAway
 
 end
